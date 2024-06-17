@@ -8,22 +8,30 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "SH Staff Documentation",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "staff-docs.stotthoare.com.au",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "Templates",
+      "Snippets",
+      "Private",
+      "Internal",
+      "private",
+      "internal",
+    ],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Epilogue",
+        body: "DM Sans",
         code: "IBM Plex Mono",
       },
       colors: {
