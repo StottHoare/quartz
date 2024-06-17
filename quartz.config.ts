@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "SH Staff Documentation",
+    pageTitle: "SH Internal Docs",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,

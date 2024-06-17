@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      ShAdmin: "https://shadmin.stotthoare.com.au",
+      "SH Admin": "https://shadmin.stotthoare.com.au",
     },
   }),
 }
