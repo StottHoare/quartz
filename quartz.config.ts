@@ -24,6 +24,8 @@ const config: QuartzConfig = {
       "Internal",
       "private",
       "internal",
+      "Blocks",
+      "blocks",
     ],
     defaultDateType: "created",
     theme: {
