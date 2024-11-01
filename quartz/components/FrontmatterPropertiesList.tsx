@@ -25,16 +25,26 @@ const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: 
       <tbody>
         {filteredFrontmatter.map(([key, value]) => (
           <tr key={key}>
-            <th>{formatKey(key)}</th>
+            <th>{key}</th>
             <td>
               {Array.isArray(value) ? (
                 <ul>
                   {value.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li key={index}>
+                      {isURL(item) ? (
+                        <a href={item} target="_blank" rel="noopener noreferrer">{item}</a>
+                      ) : (
+                        item
+                      )}
+                    </li>
                   ))}
                 </ul>
               ) : (
-                value
+                isURL(value) ? (
+                  <a href={value} target="_blank" rel="noopener noreferrer">{value}</a>
+                ) : (
+                  value
+                )
               )}
             </td>
           </tr>
