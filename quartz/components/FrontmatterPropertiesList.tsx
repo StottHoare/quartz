@@ -4,7 +4,7 @@ import { classNames } from "../util/lang"
 
 const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const frontmatter = fileData.frontmatter;
-  const ignore = ['tags', 'created', 'modified'];
+  const ignore = ['tags', 'created', 'modified', 'title'];
   const filteredFrontmatter = Object.entries(frontmatter)
     .filter(([key]) => !ignore.includes(key))
     .filter(([key, value]) => value != null && value !== '');
