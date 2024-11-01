@@ -9,6 +9,13 @@ const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: 
     .filter(([key]) => !ignore.includes(key))
     .filter(([key, value]) => value != null && value !== '');
 
+  const formatKey = (str: string) => {
+    return str
+        .split('-') // Split the string by dashes
+        .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
+        .join(' '); // Join the words with spaces
+  };
+
   if (filteredFrontmatter.length === 0) {
     return null;
   }
@@ -18,7 +25,7 @@ const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: 
       <tbody>
         {filteredFrontmatter.map(([key, value]) => (
           <tr key={key}>
-            <th>{key}</th>
+            <th>{formatKey(key)}</th>
             <td>
               {Array.isArray(value) ? (
                 <ul>
