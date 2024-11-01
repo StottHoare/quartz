@@ -16,6 +16,15 @@ const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: 
         .join(' '); // Join the words with spaces
   };
 
+  const isURL = (value: string) => {
+    try {
+      new URL(value);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  };
+
   if (filteredFrontmatter.length === 0) {
     return null;
   }
@@ -25,7 +34,7 @@ const FrontmatterPropertiesList: QuartzComponent = ({ fileData, displayClass }: 
       <tbody>
         {filteredFrontmatter.map(([key, value]) => (
           <tr key={key}>
-            <th>{key}</th>
+            <th>{formatKey(key)}</th>
             <td>
               {Array.isArray(value) ? (
                 <ul>
