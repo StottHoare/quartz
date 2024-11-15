@@ -1,8 +1,3 @@
-// $pageWidth: 850px;
-// $mobileBreakpoint: 600px;
-// $tabletBreakpoint: 1000px;
-// $sidePanelWidth: 380px;
-
 /**
  * Layout breakpoints
  * $mobile: screen width below this value will use mobile styles
@@ -19,7 +14,7 @@ $mobile: "(max-width: #{map-get($breakpoints, mobile)})";
 $tablet: "(min-width: #{map-get($breakpoints, mobile)}) and (max-width: #{map-get($breakpoints, desktop)})";
 $desktop: "(min-width: #{map-get($breakpoints, desktop)})";
 
-$pageWidth: #{map-get($breakpoints, mobile)};
+$pageWidth: 850px;
 $sidePanelWidth: 320px; //380px;
 $topSpacing: 6rem;
 $boldWeight: 700;
