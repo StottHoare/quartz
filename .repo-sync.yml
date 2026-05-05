@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=./.repo-sync.schema.json
+
+# Auto-detected by StottHoare/repo-sync. Edit before merging if detection
+# missed something or got it wrong.
+languages:
+  - node
+  # Other available languages (uncomment to opt in;
+  # mutex within a family - pick one of dotnet-8/dotnet-10, never both):
+  # - bicep
+  # - dotnet-10
+  # - dotnet-8
+  # - python
