@@ -16,6 +16,7 @@
       "items": {
         "type": "string",
         "enum": [
+          "azure-function",
           "bicep",
           "dotnet-10",
           "dotnet-8",
@@ -54,6 +55,7 @@
           "language": {
             "type": "string",
             "enum": [
+              "azure-function",
               "bicep",
               "dotnet-10",
               "dotnet-8",
