@@ -61,6 +61,9 @@ Thumbs.db
 .eslintcache
 .stylelintcache
 
+# MCP
+.playwright-mcp
+
 # === managed by repo-sync above this line; add repo-specific entries below ===
 .DS_Store
 .gitignore
